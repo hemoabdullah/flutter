@@ -83,7 +83,7 @@ Widget buttonSection = Row(
 # Practicum 4
 
 ### Langkah 1: Siapkan aset gambar:
-![Alt text](IMG/proc8.png)
+![Alt text](IMG/proc88.png)
 
 ### Langkah 2: Tambahkan gambar ke body:
 ![Alt text](IMG/proc9.png)
