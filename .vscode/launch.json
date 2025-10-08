@@ -1,0 +1,88 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "flutter_application",
+            "cwd": "week5\\flutter_application",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "flutter_application (profile mode)",
+            "cwd": "week5\\flutter_application",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "flutter_application (release mode)",
+            "cwd": "week5\\flutter_application",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "hello_world",
+            "cwd": "week5\\hello_world",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "hello_world (profile mode)",
+            "cwd": "week5\\hello_world",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "hello_world (release mode)",
+            "cwd": "week5\\hello_world",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "basic_layout_flutter-master",
+            "cwd": "week6\\basic_layout_flutter-master",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "basic_layout_flutter-master (profile mode)",
+            "cwd": "week6\\basic_layout_flutter-master",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "basic_layout_flutter-master (release mode)",
+            "cwd": "week6\\basic_layout_flutter-master",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "layout_flutter-master",
+            "cwd": "week6\\layout_flutter-master",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "layout_flutter-master (profile mode)",
+            "cwd": "week6\\layout_flutter-master",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "layout_flutter-master (release mode)",
+            "cwd": "week6\\layout_flutter-master",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
