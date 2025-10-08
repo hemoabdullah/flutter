@@ -73,6 +73,12 @@ class MyApp extends StatelessWidget {
               height: 240,
               fit: BoxFit.cover,
             ),
+            Image.asset(
+              'images/prac1.gif',
+              width: double.infinity,
+              height: 240,
+              fit: BoxFit.cover,
+            ),
             titleSection,
             buttonSection,
             textSection,

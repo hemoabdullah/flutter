@@ -97,5 +97,5 @@ Right beneath that is the buttonSection, a horizontally spaced Row that creates 
 
 ## Result:
 
-![Alt text](IMG/Prac2.gif)
-
+![Alt text](IMG/prac1.mp4)
+![Alt text](IMG/prac1.png)
