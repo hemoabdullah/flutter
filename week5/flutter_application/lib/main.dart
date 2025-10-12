@@ -113,7 +113,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 // ===================== Generator Page =====================
 class GeneratorPage extends StatelessWidget {
-  GeneratorPage({super.key});
+  const GeneratorPage({super.key});
 
   @override
   Widget build(BuildContext context) {

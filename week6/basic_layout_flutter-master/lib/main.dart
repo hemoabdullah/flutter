@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
 
 void main() => runApp(const MyApp());
 class MyApp extends StatelessWidget {
