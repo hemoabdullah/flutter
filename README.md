@@ -110,7 +110,7 @@ This project showcases my continuous learning progress in **Dart programming** a
 
 ---
 
-### 🔹 Week 8: State Management  
+### 🔹 Week 8: --- 
 **Topics Covered**  
 - Understanding stateful behavior  
 - setState and data updates  
@@ -121,7 +121,7 @@ This project showcases my continuous learning progress in **Dart programming** a
 
 ---
 
-### 🔹 Week 9: Firebase and External Packages  
+### 🔹 Week 9:  ---
 **Topics Covered**  
 - Introduction to Firebase integration  
 - Using pub.dev packages  
@@ -132,7 +132,7 @@ This project showcases my continuous learning progress in **Dart programming** a
 
 ---
 
-### 🔹 Week 10: Final Project & Implementation  
+### 🔹 Week 10: ---
 **Topics Covered**  
 - Combining all previous concepts  
 - Developing a complete functional app  
