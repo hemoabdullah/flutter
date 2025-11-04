@@ -89,11 +89,13 @@ At this stage, a GIF is captured showing the app’s final behavior.
 The result demonstrates how the data from the InheritedWidget (or InheritedNotifier) is distributed across the widget tree.
 When the shared data changes, only the relevant parts of the interface update automatically, showing the effectiveness of inherited state management in Flutter.
 #### Final Result
-![Main Screen](IMG/1.png)
+
+![prac 1 ](IMG/1.gif)
 
 
 ### Practical 3: State in Multiple Screens
 #### Application Demo
+
 ![App Demo](IMG/2.gif)
 1. Complete the lab steps, then document the final results with a GIF and explanation in the file README.md! If you find any errors or issues, please fix them.
 2. Based on the Practical 3 that you have done, explain the meaning of the following diagram!
@@ -133,11 +135,13 @@ SafeArea → Text Shows completion metrics (such as "3 out of 5 tasks complete")
 
 3. Capture the results of Step 14 as a GIF, then explain what you have created!
 ### Full Functionality
-![Full Demo](IMG/4.gif)
+
+![Full Demo](IMG/3.gif)
 
 ---
 ### Architecture Diagram
-![Architecture](IMG/3.png)
+
+![Architecture](IMG/4.png)
 
 
 ---
