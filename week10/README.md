@@ -88,15 +88,20 @@ This pattern keeps the code clean and avoids repetitive object creation.
 At this stage, a GIF is captured showing the app’s final behavior.
 The result demonstrates how the data from the InheritedWidget (or InheritedNotifier) is distributed across the widget tree.
 When the shared data changes, only the relevant parts of the interface update automatically, showing the effectiveness of inherited state management in Flutter.
-#### Final Result
+#### Final Result :
+<img src="IMG/1.gif" alt="prac 1" width="400"/>
 
-![prac 1 ](IMG/1.gif)
+
+---
 
 
-### Practical 3: State in Multiple Screens
-#### Application Demo
+#### Practical 3: State in Multiple Screens
 
-![App Demo](IMG/2.gif)
+
+##### Application Demo
+<img src="IMG/2.gif" alt="App Demo" width="400"/>
+
+
 1. Complete the lab steps, then document the final results with a GIF and explanation in the file README.md! If you find any errors or issues, please fix them.
 2. Based on the Practical 3 that you have done, explain the meaning of the following diagram!
 The diagram depicts the widget structure and state management flow in the Master Plan application following the implementation of lifted state using an InheritedWidget (particularly InheritedNotifier), enabling state sharing between multiple screens. This visualization shows how Flutter effectively handles global state across various screens using InheritedNotifier, independent of external state management solutions like Provider or Riverpod.
@@ -136,7 +141,7 @@ SafeArea → Text Shows completion metrics (such as "3 out of 5 tasks complete")
 3. Capture the results of Step 14 as a GIF, then explain what you have created!
 ### Full Functionality
 
-![Full Demo](IMG/3.gif)
+<img src="IMG/3.gif" alt="Last" width="400"/>
 
 ---
 ### Architecture Diagram
