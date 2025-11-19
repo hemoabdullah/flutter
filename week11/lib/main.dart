@@ -1,8 +1,5 @@
-import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart';
-import 'package:http/http.dart' as http;
-import 'package:books/navigation_dialog.dart';
+import 'color_stream.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,90 +11,69 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Hammam Abdullah BG',
+      title: 'Stream - Febrian Arka Samudra - 2341720066',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.amber,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const NavigationDialogScreen(), 
+      home: const StreamHomePage(),
     );
   }
 }
 
-class FuturePage extends StatefulWidget {
-  const FuturePage({super.key});
+class StreamHomePage extends StatefulWidget {
+  const StreamHomePage({super.key});
 
   @override
-  State<FuturePage> createState() => _FuturePageState();
+  State<StreamHomePage> createState() => _StreamHomePageState();
 }
 
-class _FuturePageState extends State<FuturePage> {
-  String result = '';
+class _StreamHomePageState extends State<StreamHomePage> {
+  Color bgColor = Colors.blueGrey;
+  late ColorStream colorStream;
+  int lastNumber = 0;
 
-  Future<Response> getData() async {
-    const authority = 'www.googleapis.com';
-    const path = '/books/v1/volumes/junbDwAAQBAJ';
-    Uri url = Uri.https(authority, path);
-    return http.get(url);
+  @override
+  void initState() {
+    super.initState();
+    colorStream = ColorStream();
+    changeColor();
   }
 
-Future<int> returnOneAsync() async {
-  await Future.delayed(const Duration(seconds: 3));
-  return 1;
-}
-
-Future<int> returnTwoAsync() async {
-  await Future.delayed(const Duration(seconds: 3));
-  return 2;
-}
-
-Future<int> returnThreeAsync() async {
-  await Future.delayed(const Duration(seconds: 3));
-  return 3;
-}
-
-Future count() async {
-  int total = 0;
-  total = await returnOneAsync();
-  total += await returnTwoAsync();
-  total += await returnThreeAsync();
-  setState(() {
-    result = total.toString();
-  });
-}
-
-late Completer completer;
-
-Future getNumber() {
-  completer = Completer<int>();
-  calculate();
-  return completer.future;
-}
-
-Future calculate() async {
-  try {
-      await Future.delayed(const Duration(seconds : 5));
-      completer.complete(42);
-  } catch (_) {
-    completer.completeError({});
-  }
-}
-
-    void returnFG() {
-        final futures = Future.wait<int>([
-        returnOneAsync(),
-        returnTwoAsync(),
-        returnThreeAsync(),
-      ]);
-
-      futures. then((List <int> value) {
-        int total = 0;
-        for (var element in value) {
-          total += element;
-        }
+  void changeColor() async {
+    await for (var color in colorStream.getColors()) {
+      if (mounted) {
         setState(() {
-        result = total.toString();
-       });
+          bgColor = color;
+        });
+      }
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Stream'),
+      ),
+      body: Container(
+        width: double.infinity,
+        height: double.infinity,
+        color: bgColor,
+        child: Center(
+          child: Text(
+            'Hello!',
+            style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
     });
   }
 
